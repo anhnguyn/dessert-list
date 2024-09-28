@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="scripts/script.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="desserts-grid">
+      <h1>Desserts</h1>
+      <div id="desserts">
+      </div>
+    </div>
+    <div id="cart">
+      <h2>Your Cart</h2>
+      <p>Your added items will appear here.</p>
+      <button type="submit" id="confirm-btn" onclick="openConfirmModal()">Confirm Order</button>
+    </div>
+    <dialog id="confirm-modal">
+      <h1>Order Confirmed</h1>
+      We hope you enjoy your food
+      <button>Start New Order</button>
+    </dialog>
+  </div>
+</body>
+</html>
